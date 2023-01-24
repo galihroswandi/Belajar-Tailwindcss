@@ -1,31 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Layer base disarankan untuk mengubah style dasar seperti h1 dan sejenisnya */
-@layer base {
-  h1 {
-    @apply text-6xl text-primary;
-    /* Theme digunakan untuk mengambil nilai yang telah ada di custom config dan tidak di generate oleh tailwind */
-    /* color: theme(colors.primary); */
-  }
-}
-
-/* Layer Components disarankan untuk membuat class class untuk sebuah style tertentu agar css lebih efisien */
-@layer components {
-  /* Fungsi @apply digunakan untuk memanggil class class utility tailwind di dalam sebuah style */
-  .card-container {
-    @apply bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative hover:scale-95 transition-all duration-500;
-  }
-
-  .card-body {
-    @apply w-full h-full bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute;
-  }
-}
-
-/* @layer utilities disarankan untuk mengubah class class utility tailwind */
-@layer utilities {
-  #toggle:checked ~ label div.toggle-circle {
-    @apply translate-x-3;
-  }
-}
