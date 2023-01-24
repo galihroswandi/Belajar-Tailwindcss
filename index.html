@@ -9,49 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    spacing: {
-                        13: '3.25rem',
-                    },
-                    fontFamily: {
-                        Inter: ['Inter']
-                    },
-                    colors: {
-                        primary: "#bada55",
-                        kopi: "C0FFE"
-                    },
-                    animation: {
-                        'spin-slow': 'spin 3s linear infinite',
-                        'waving-hand': 'wave 2s linear infinite',
-                    },
-                    keyframes: {
-                        wave: {
-                            '0%': { transform: 'rotate(0.0deg)' },
-                            '10%': { transform: 'rotate(14deg)' },
-                            '20%': { transform: 'rotate(-8deg)' },
-                            '30%': { transform: 'rotate(14deg)' },
-                            '40%': { transform: 'rotate(-4deg)' },
-                            '50%': { transform: 'rotate(10.0deg)' },
-                            '60%': { transform: 'rotate(0.0deg)' },
-                            '100%': { transform: 'rotate(0.0deg)' },
-                        },
-                    },
-                }
-            }
-        }
-    </script>
-
-    <style type="text/tailwindcss">
-        #toggle:checked ~ label div.toggle-circle{
-            @apply translate-x-3;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="dark:bg-slate-800 dark:text-slate-200">
@@ -308,67 +266,49 @@
             <span class="self-end">@galihroswandi</span>
         </div>
 
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/1.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group">
+            <div class="card-body bg-[url('/img/grid/1.jfif')]"></div>
+        </div>
+        <div class="card-container group md:col-start-3">
+            <div class="card-body bg-[url('/img/grid/2.jfif')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/2.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group">
+            <div class="card-body bg-[url('/img/grid/3.jfif')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/3.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group">
+            <div class="card-body bg-[url('/img/grid/4.jfif')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/4.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group">
+            <div class="card-body bg-[url('/img/grid/5.jfif')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/5.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group md:col-start-2">
+            <div class="card-body bg-[url('/img/grid/6.jfif')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/6.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group md:col-start-4">
+            <div class="card-body bg-[url('/img/grid/7.jfif')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/7.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group">
+            <div class="card-body bg-[url('/img/grid/8.jfif')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/8.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group md:col-start-3">
+            <div class="card-body bg-[url('/img/grid/9.jfif')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/9.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
-            </div>
-        </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('/img/grid/10.jfif')] bg-center bg-cover group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 absolute">
+        <div class="card-container group md:col-start-3">
+            <div class="card-body bg-[url('/img/grid/10.jfif')]">
             </div>
         </div>
     </div>
+
+
+    <h1>Galih Roswandi</h1>
 
     <div class="mb-96"></div>
 
